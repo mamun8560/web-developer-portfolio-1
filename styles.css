@@ -12,6 +12,7 @@
     --dark-3:#757575;
     --btn-text-color:#FFFFFF;
     --background-color:#FFF8F3;
+    --drop-shadow:rgba(0, 0, 0, 0.06);
 
 }
 /*shared style}*/
@@ -36,6 +37,9 @@
     font-size: 18px;
     color: var(--dark-3);
 
+}
+.text-center{
+    text-align: center;
 }
 /*header*/
 
@@ -102,20 +106,24 @@ nav ul li a{
 .banner-content{
     max-width:580px ;
 }
-main{
-    background-color: var(--background-color);
-}
+
 /*main styles*/
 main{
     max-width: 1140px;
     margin: 0 auto;
+    
+}
+main section{
+    margin-top: 130px;
+    margin-bottom: 130px;
 }
 /*about styels*/
 .about{
     border-radius: 10px;
-    padding: 130px 150px;
+    padding: 10px;
     text-align: center;
-    margin-top: 146px;
+    
+    background-color: var(--background-color);
 }
 
 .about-items{
@@ -125,5 +133,76 @@ main{
     padding: 131px 156px;
 }
 .item-description{
+    font-weight: 600;
+}
+/*skills section*/
+.skills{
+    margin-top: 100px;
+
+}
+.sectioin-title{
+    text-align: center;
+
+}
+.section-description{
+    text-align: center;
+    
+}
+.skills-container{
+    justify-content: space-around;
+    display: flex;
+    gap: 24px;
+   
+}
+.skill{
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 6px 50px 0px var(--drop-shadow);
+}
+/*resume section*/
+.resume-container{
+    display: flex;
+    gap: 24px; 
+}
+.experience-sub-title{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.experience-description, .experience-sub-title{
+    color: var(--dark-3);
+}
+.resume hr{
+    margin: 30px 5px;
+}
+.resume-download-cv{
+    padding: auto;
+    background-color: none;
+    margin-top: 50px;
+    
+}
+/*footer styles*/
+.footer-column{
+    width: 50%;
+}
+footer{
+    padding: 130px 230px;
+    display: flex;
+    gap: 100px;
+    background-color: var(--background-color);
+}
+footer input[type="text"],footer input[type="email"], footer textarea{
+    height:64px;
+    border-radius:5px;
+    background-color: var(--btn-text-color);
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    margin-bottom: 24px;
+    border: none;
+
+}
+footer input,textarea::placeholder{
+    font-size: 20px;
     font-weight: 600;
 }
